@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/favicon.png"
+    />
+  </head>
+  <body>
+    <div id="alertPopup" class="popup" style="display: none">
+      <div class="popup-content">
+        <p>Please enter a city Name</p>
+        <button id="closePopup">OK</button>
+      </div>
+    </div>
+
+    <h1 class="title"> Weather App</h1>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false" />
+        <button class="btn btn-primary"><img src="img/search.png" /></button>
+      </div>
+
+      <div class="weather">
+        <img src="img/weather.png" class="weather-icon" />
+        <h4 class="day">Monday</h4>
+        <h5 class="date">10</h5>
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">Pakistan</h2>
+        <div class="deatils">
+          <div class="col">
+            <img src="img/humidity.png" class="img-weather" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/wind.png" class="img-weather" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
